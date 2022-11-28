@@ -61,7 +61,7 @@ mongoose.Promise = global.Promise;
 const Logger = require('./Logger');
 const log = new Logger('server');
 
-const isHttps = true; // must be the same on client.js
+const isHttps = false; // must be the same on client.js
 const port = process.env.PORT || 3000; // must be the same to client.js signalingServerPort
 
 let io, server, host;
@@ -1113,7 +1113,7 @@ async function sendToPeer(peer_id, sockets, msg, config = {}) {
         });
     }
 });
-
+/*
 (async () => {
     const tunnel = await localtunnel({ 
     port: 3000,
@@ -1136,4 +1136,4 @@ async function sendToPeer(peer_id, sockets, msg, config = {}) {
   // tunnels are closed
   });
   })();
-
+*/

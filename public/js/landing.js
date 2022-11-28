@@ -314,7 +314,7 @@
           redirect: 'follow'
         };
 
-        fetch("https://cfv-chat16.loca.lt/listone", requestOptions)
+        fetch("http://localhost/listone", requestOptions)
           .then(response => response.text())
           .then(result => creete(result))
           .catch(error => console.log('error', error));
@@ -421,7 +421,7 @@
     }
 
     function startroom(a,b){
-        window.open("https://cfv-chat16.loca.lt/join/"+a+"_"+b, '_self')
+        window.open("http://localhost/join/"+a+"_"+b, '_self')
     }
 
     function testo(t){

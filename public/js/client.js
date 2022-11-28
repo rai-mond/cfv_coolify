@@ -20,7 +20,7 @@
 
 'use strict'; // https://www.w3schools.com/js/js_strict.asp
 
-const isHttps = true; // must be the same on server.js
+const isHttps = false; // must be the same on server.js
 const signalingServer = getSignalingServer();
 const roomId = getRoomId();
 const peerLoockupUrl = 'https://extreme-ip-lookup.com/json/?key=demo2'; // get your API Key at https://extreme-ip-lookup.com
