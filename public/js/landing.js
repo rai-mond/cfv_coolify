@@ -314,7 +314,7 @@
           redirect: 'follow'
         };
 
-        fetch("http://localhost/listone", requestOptions)
+        fetch(window.location.href + "listone", requestOptions)
           .then(response => response.text())
           .then(result => creete(result))
           .catch(error => console.log('error', error));
@@ -421,7 +421,7 @@
     }
 
     function startroom(a,b){
-        window.open("http://localhost/join/"+a+"_"+b, '_self')
+        window.open(window.location.href + "join/"+a+"_"+b, '_self')
     }
 
     function testo(t){
